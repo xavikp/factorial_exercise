@@ -2,54 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="146b3822-90da-4848-8fa8-ba158dd671b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/factorial_exercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/api/v1/contact_list_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/api/v1/edits_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/contact_list_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/edit_list_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/contact_list_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/edit_list_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/serializers/contact_serializer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/serializers/edit_serializer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/db_methods.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220317162759_create_contacts.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20220317162943_create_edits.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/contact_list_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/edit_list_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/contacts.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/edits.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/files/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/helpers/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/integration/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/mailers/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/contact_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/edit_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/contact.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/contact.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cable.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/cable.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db_attr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_attr.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220316184643_create_contacts.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220316184800_create_edits.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/contact_list_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/contact_list_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/edits_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/edits_controller.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1647534337200</updated>
       <workItem from="1647534340201" duration="6025000" />
-      <workItem from="1647594489996" duration="7201000" />
+      <workItem from="1647594489996" duration="15190000" />
     </task>
     <servers />
   </component>
