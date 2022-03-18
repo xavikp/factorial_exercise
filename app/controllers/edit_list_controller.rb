@@ -1,0 +1,2 @@
+class EditListController < ApplicationController
+end

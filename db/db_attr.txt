@@ -5,6 +5,7 @@ last_name: string
 phone_number:integer
 email:string
 
+
 table EDITS:
 id:unique_number
 date:time
@@ -13,3 +14,17 @@ previous_last_name:string
 previous_phone_number:integer
 previous_email:string
 contact_id:integer related to CONTACTS id
+
+
+API returns
+{"data"=>{
+    "id"=>"1",
+    "type"=>"contact",
+    "attributes"=>{
+        "first_name"=>"Xavier",
+        "last_name"=>"Val",
+        "phone_number"=>11111111,
+        "email"=>"test@gmail.com"
+        }
+    }
+ }

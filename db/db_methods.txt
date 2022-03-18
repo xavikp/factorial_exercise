@@ -1,0 +1,19 @@
+Contacts list:
+-get_contacts(): returns list with id
+test return list
+
+Contact details:
+-get_info(id): returns full name, phone_number, email and edit history
+test with valid and wrong id
+
+New contact:
+-add_contact(contact): returns bool flag, inserts new contact in the db
+black box test
+
+Edit contact:
+-edit_contact(id, new_info): return bool flag, edits contacts info, appends old info to history field
+black box test
+
+Delete contact:
+-delete_contact(id): returns bool flag
+test with valid and wrong id

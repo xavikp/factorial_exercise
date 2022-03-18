@@ -1,4 +1,3 @@
 class Contact < ApplicationRecord
-    has_many :edits
-    
+  has_many :edits
 end
