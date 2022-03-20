@@ -2,9 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="146b3822-90da-4848-8fa8-ba158dd671b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/contact_list_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/new_user_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/ContactInfo/ContactInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/ContactList/ContactList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/ContactListIcon/ContactListIcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/Home/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/HomeIcon/HomeIcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/NewUserIcon/NewUserIcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/packs/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/webpack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/webpack-dev-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack/development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack/environment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack/production.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpacker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/factorial_exercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/factorial_exercise.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/contact_list_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/contact_list_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/edits_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/edits_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,12 +45,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="ERB File" />
         <option value="Ruby File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -45,6 +86,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PCCOM\Documents\factorial_exercise\public" />
+      <recent name="C:\Users\PCCOM\Documents\factorial_exercise\app" />
+      <recent name="C:\Users\PCCOM\Documents\factorial_exercise\app\src" />
+    </key>
   </component>
   <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_db">
     <configuration name="Development: factorial_exercise" type="RailsRunConfigurationType" factoryName="Rails">
@@ -176,7 +224,10 @@
       <option name="presentableId" value="Default" />
       <updated>1647534337200</updated>
       <workItem from="1647534340201" duration="6025000" />
-      <workItem from="1647594489996" duration="15190000" />
+      <workItem from="1647594489996" duration="18056000" />
+      <workItem from="1647683409484" duration="7187000" />
+      <workItem from="1647719703423" duration="9200000" />
+      <workItem from="1647771432668" duration="3829000" />
     </task>
     <servers />
   </component>

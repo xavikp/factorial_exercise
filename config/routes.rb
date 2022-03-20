@@ -7,5 +7,5 @@ Rails.application.routes.draw do
       resources :edits
     end
   end
-
+  get '*path', to: 'pages#index', via: :all
 end
