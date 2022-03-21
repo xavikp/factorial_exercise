@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const NewUserIcon = ({height,width}) => {
     return (
-        <Link to="/add_user">
+        <Link to="/new_contact">
             <img src={new_user} width={width} height={height} alt={"New user icon"}/>
         </Link>
     )

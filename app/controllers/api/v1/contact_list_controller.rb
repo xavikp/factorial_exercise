@@ -55,10 +55,14 @@ module Api
       #delete a contact in the DB
       def destroy
         contact = Contact.find_by(id: params[:id])
-        if contact.destroy
-          head :no_content
+        if contact == nil
+          render json: { error: "Contact doesn't exist" }, status: 404
         else
-          render json: { error: contact.errors.messages }, status: 404
+          if contact.destroy
+            head :no_content
+          else
+            render json: { error: contact.errors.messages }, status: 404
+          end
         end
       end
 

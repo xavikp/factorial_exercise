@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home/Home";
 import ContactList from "./ContactList/ContactList";
 import ContactInfo from "./ContactInfo/ContactInfo";
+import NewContact from "./NewContact/NewContact";
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
                 <Route exact path="/" element={<Home/>}/>
                 <Route exact path="/contacts" element={<ContactList/>}/>
                 <Route exact path="/contact/:id" element={<ContactInfo/>}/>
+                <Route exact path="/new_contact" element={<NewContact/>}/>
             </Routes>
 
         </BrowserRouter>

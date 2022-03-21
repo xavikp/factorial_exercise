@@ -2,40 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="146b3822-90da-4848-8fa8-ba158dd671b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/contact_list_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/new_user_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/ContactInfo/ContactInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/ContactList/ContactList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/ContactListIcon/ContactListIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/HomeIcon/HomeIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/NewUserIcon/NewUserIcon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/webpack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/webpack-dev-server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack/development.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack/environment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack/production.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpacker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/factorial_exercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/factorial_exercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/delete_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/edit_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/DeleteUserIcon/DeleteUserIcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/EditContactIcon/EditContactIcon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/Header/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/Home/Home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/NewContact/NewContact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/contact_list_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/contact_list_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/ContactList/ContactList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/ContactList/ContactList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/NewUserIcon/NewUserIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/NewUserIcon/NewUserIcon.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +27,7 @@
       <list>
         <option value="ERB File" />
         <option value="Ruby File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -85,6 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -227,7 +209,11 @@
       <workItem from="1647594489996" duration="18056000" />
       <workItem from="1647683409484" duration="7187000" />
       <workItem from="1647719703423" duration="9200000" />
-      <workItem from="1647771432668" duration="3829000" />
+      <workItem from="1647771432668" duration="6204000" />
+      <workItem from="1647796413763" duration="7778000" />
+      <workItem from="1647808072824" duration="690000" />
+      <workItem from="1647850257344" duration="19000" />
+      <workItem from="1647847439004" duration="8570000" />
     </task>
     <servers />
   </component>
