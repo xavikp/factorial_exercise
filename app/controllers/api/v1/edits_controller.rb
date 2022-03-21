@@ -11,8 +11,8 @@ module Api
       # returns a json with the information of the edits or a 404 error if not found
       def show
         edit = Edit.where(contact_id: params[:id])
-        if edit[0] == nil
-          render json: { error: "Not found" }, status: 404
+        if edit == []
+          render json: { error: "There's no edit data for this contact" }, status: 202
         else
           render json: EditSerializer.new(edit).serialized_json, status: 200
         end

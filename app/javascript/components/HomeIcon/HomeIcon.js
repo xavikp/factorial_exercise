@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const ContactListIcon = ({height,width}) => {
     return (
-        <Link to="/contacts">
+        <Link to="/">
             <img src={home_icon} width={width} height={height} alt={"Home Icon"}/>
         </Link>
     )
