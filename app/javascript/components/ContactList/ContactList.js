@@ -19,6 +19,7 @@ const ContactList = () => {
     const [edits, setEdits] = useState([]);
 
     var header = "CONTACT LIST";
+    var empty_history = false;
 
     //function to get the contacts that are in the DB
     //uses axios to call the API and get the info
@@ -39,9 +40,10 @@ const ContactList = () => {
         axios.get('api/v1/edits/' + id)
             .then(resp => {
                 if(resp.status !== 202){
+                    console.log(resp.data.data);
                     setEdits(resp.data.data);
-                    console.log(resp.data.data)
                 }else{
+                    console.log(resp.status)
                     setEdits([])
                 }
             })
@@ -62,7 +64,6 @@ const ContactList = () => {
             })
             .catch(console.log("Deleting contact"))
     }
-
 
 
     //hook to get the contacts every time the length changes, done for the deleting process
@@ -96,18 +97,21 @@ const ContactList = () => {
     })
 
     const history = edits.map(item => {
-        return(
-            <div key={item.id}>
-                <Row>
-                    Date of edit: {item.attributes.date} <br/>
-                    Previous name: {item.attributes.previous_first_name + " " + item.attributes.previous_last_name} <br/>
-                    Previous email: {item.attributes.previous_email} <br/>
-                    Previous phone number: {item.attributes.previous_phone_number} <br/>
-                </Row>
-                <br/>
-            </div>
-        )
-    })
+            return (
+                <div key={item.id}>
+                    <Row>
+                        Date of edit: {item.attributes.date} <br/>
+                        Previous name: {item.attributes.previous_first_name + " " + item.attributes.previous_last_name}
+                        <br/>
+                        Previous email: {item.attributes.previous_email} <br/>
+                        Previous phone number: {item.attributes.previous_phone_number} <br/>
+                    </Row>
+                    <br/>
+                </div>
+            )
+        }
+    )
+
 
     return (
         <div>
@@ -125,6 +129,7 @@ const ContactList = () => {
                     {list}
                 </div>
                 <div className='col-md-5'>
+                    <h4>Edit history</h4>
                     {history}
                 </div>
             </Row>

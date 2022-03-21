@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="146b3822-90da-4848-8fa8-ba158dd671b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/images/contact_details.json.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/components/EditHistoryIcon/EditHistoryIcon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/edits_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/edits_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/components/ContactList/ContactList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/ContactList/ContactList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/components/HomeIcon/HomeIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/HomeIcon/HomeIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/NewContact/NewContact.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/NewContact/NewContact.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +202,8 @@
       <workItem from="1647796413763" duration="7778000" />
       <workItem from="1647808072824" duration="690000" />
       <workItem from="1647850257344" duration="19000" />
-      <workItem from="1647847439004" duration="13623000" />
+      <workItem from="1647847439004" duration="17109000" />
+      <workItem from="1647893356508" duration="2208000" />
     </task>
     <servers />
   </component>
