@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="146b3822-90da-4848-8fa8-ba158dd671b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/javascript/components/EditContact/EditContact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/factorial_exercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/factorial_exercise.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/contact_list_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/contact_list_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/components/ContactList/ContactList.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/ContactList/ContactList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/components/EditContactIcon/EditContactIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/EditContactIcon/EditContactIcon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/components/NewContact/NewContact.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/components/NewContact/NewContact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +66,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/javascript/components/EditContact" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PCCOM\Documents\factorial_exercise\app\javascript\components\EditContact" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\PCCOM\Documents\factorial_exercise\public" />
       <recent name="C:\Users\PCCOM\Documents\factorial_exercise\app" />
@@ -203,7 +218,8 @@
       <workItem from="1647808072824" duration="690000" />
       <workItem from="1647850257344" duration="19000" />
       <workItem from="1647847439004" duration="17109000" />
-      <workItem from="1647893356508" duration="2208000" />
+      <workItem from="1647893356508" duration="2293000" />
+      <workItem from="1647936606755" duration="31057000" />
     </task>
     <servers />
   </component>

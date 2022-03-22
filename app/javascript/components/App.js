@@ -6,6 +6,7 @@ import Home from "./Home/Home";
 import ContactList from "./ContactList/ContactList";
 import ContactInfo from "./ContactInfo/ContactInfo";
 import NewContact from "./NewContact/NewContact";
+import EditContact from "./EditContact/EditContact";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
                 <Route exact path="/contacts" element={<ContactList/>}/>
                 <Route exact path="/contact/:id" element={<ContactInfo/>}/>
                 <Route exact path="/new_contact" element={<NewContact/>}/>
+                <Route exact path="/edit_contact/:id" element={<EditContact/>}/>
             </Routes>
 
         </BrowserRouter>

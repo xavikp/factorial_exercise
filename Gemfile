@@ -48,6 +48,7 @@ gem "fast_jsonapi"
 gem 'jsbundling-rails'
 
 gem 'webpacker'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

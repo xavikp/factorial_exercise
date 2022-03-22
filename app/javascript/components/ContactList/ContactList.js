@@ -1,10 +1,8 @@
-import ReactDOM from "react-dom";
-import App from "../App";
 import React, {useEffect, useState} from "react";
 import axios from 'axios'
 import '../Home/Home.css';
 import Header from "../Header/Header";
-import {Card, Col, Row} from "react-bootstrap";
+import {Button, Col, Container, Modal, ModalBody, Row} from "react-bootstrap";
 import HomeIcon from "../HomeIcon/HomeIcon";
 import NewUserIcon from "../NewUserIcon/NewUserIcon";
 import EditContactIcon from "../EditContactIcon/EditContactIcon";
@@ -19,7 +17,6 @@ const ContactList = () => {
     const [edits, setEdits] = useState([]);
 
     var header = "CONTACT LIST";
-    var empty_history = false;
 
     //function to get the contacts that are in the DB
     //uses axios to call the API and get the info
@@ -33,6 +30,11 @@ const ContactList = () => {
             .catch(resp => console.log(resp))
     }
 
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     //function that handles the selection of contact to load its edit history
     //params: id -> contact id
     //returns list of edits
@@ -74,44 +76,38 @@ const ContactList = () => {
     //function that prints the contact list in screen
     const list = contacts.map(item => {
         return (
-            <div key={item.attributes.email} className='col-md-auto'>
-                <div className='col-md-auto'>
+            <div key={item.attributes.email} className='justify-content-center'>
                     <Row>
-                        <div className='col-md-4'>
-                            <b>{item.attributes.first_name + " " + item.attributes.last_name}</b>
+                        <div className='col-md-6'>
+                            <strong>{item.attributes.first_name + " " + item.attributes.last_name}</strong>
                             <EditContactIcon width={"20%"} height={"20%"} id={item.id}/> <br/>
-                            Email: {item.attributes.email} <br/>
-                            Phone number: {item.attributes.phone_number} <br/>
-                            {item.id}
+                            <strong>Email:</strong>  {item.attributes.email}<br/>
+                            <strong>Phone number:</strong> {item.attributes.phone_number} <br/>
                         </div>
-                        <div className='col-md-4'>
-                            <a onClick={() => fetchEdits(item.id)}><EditHistoryIcon  width={"30%"} height={"30%"}/></a>
-                            <a onClick={() => handleDelete(item.id)}><DeleteUserIcon  width={"30%"} height={"30%"}/></a>
+                        <div className='col-md-6'>
+                            <a onClick={() => {fetchEdits(item.id); handleShow()}}><EditHistoryIcon  width={"20%"} height={"20%"}/></a>
+                            <a onClick={() => handleDelete(item.id)} ><DeleteUserIcon width={"20%"} height={"20%"}/></a>
                         </div>
                     </Row>
                     <br/>
-                </div>
             </div>
-
         )
     })
 
+    //renders the Edits in a Modal
     const history = edits.map(item => {
             return (
                 <div key={item.id}>
-                    <Row>
-                        Date of edit: {item.attributes.date} <br/>
-                        Previous name: {item.attributes.previous_first_name + " " + item.attributes.previous_last_name}
-                        <br/>
-                        Previous email: {item.attributes.previous_email} <br/>
-                        Previous phone number: {item.attributes.previous_phone_number} <br/>
-                    </Row>
+                    <div>
+                        <b>Date of edit:</b> {item.attributes.date} <br/>
+                        <b>Previous name:</b> {item.attributes.previous_first_name + " " + item.attributes.previous_last_name}<br/>
+                        <b>Previous email:</b> {item.attributes.previous_email} <br/>
+                        <b>Previous phone number:</b> {item.attributes.previous_phone_number} <br/>
+                    </div>
                     <br/>
                 </div>
-            )
-        }
+            )}
     )
-
 
     return (
         <div>
@@ -124,16 +120,27 @@ const ContactList = () => {
                     <NewUserIcon width={"30%"} height={"30%"} />
                 </Col>
             </Row>
-            <Row>
-                <div className='col-md-7'>
+            <Container className='align-content-center'>
+                <div className='col-md-12'>
                     {list}
                 </div>
-                <div className='col-md-5'>
-                    <h4>Edit history</h4>
-                    {history}
-                </div>
-            </Row>
+            </Container>
 
+            <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <Modal show={show} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                        <h4>Edit history</h4>
+                    </Modal.Header>
+                    <ModalBody>
+                        {history}
+                    </ModalBody>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={handleClose}>
+                            Close
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
+            </div>
         </div>
     )
 }
