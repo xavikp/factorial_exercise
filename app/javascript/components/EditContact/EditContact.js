@@ -60,6 +60,18 @@ const EditContact = () => {
         return true;
     }
 
+    function validStrings(fName, lName, eMail, pNumber){
+        var lengthPNum = Math.log(pNumber) * Math.LOG10E + 1 | 0;
+        return fName.length > 1 && lName.length > 1 && eMail.length > 3 && lengthPNum > 5
+    }
+
+    function sameStrings(fName, lName, eMail, pNumber, contact)
+    {
+        console.log(contact[0].attributes)
+        console.log(fName === contact[0].attributes.first_name, lName === contact[0].attributes.last_name, eMail == contact[0].attributes.em, pNumber == contact[0].attributes)
+        return fName === contact[0].attributes.first_name && lName === contact[0].attributes.last_name && eMail === contact[0].attributes.email && pNumber === contact[0].attributes.phone_number
+    }
+
     //function to call the API so the changes are saved in the DB and the edits DB is populated with those changes
     const postEdit = () => {
         //local vars for the API call
@@ -67,66 +79,73 @@ const EditContact = () => {
         let last = new_last_name;
         let eM = new_email;
         let phone = new_phone_number;
+
         //checks if each field is null so that all fields send some information
-        if (new_first_name.length < 2)
+        if (name.length < 2)
         {
             name=contact[0].attributes.first_name
         }
-        if (new_last_name.length < 2)
+        if (last.length < 2)
         {
             last=contact[0].attributes.last_name
         }
-        if(new_email.length < 3)
+        if(eM.length < 3)
         {
             eM=contact[0].attributes.email
         }
-        if(new_phone_number.length < 5 || new_phone_number.length >= 12)
+        if(phone.length < 5 || phone.length >= 12)
         {
             phone=contact[0].attributes.phone_number
         }
-        //object that carries the updated data of the contact
-        const edited_contact = {
-            first_name: name,
-            last_name: last,
-            email: eM,
-            new_phone_number: phone,
-            id: contact[0].id
-        }
-        //object that carries the data of the edit
-        const edit_data = {
-            date: moment().format("MMM Do YY"),
-            previous_first_name: contact[0].attributes.first_name,
-            previous_last_name: contact[0].attributes.last_name,
-            previous_email: contact[0].attributes.email,
-            previous_phone_number: contact[0].attributes.phone_number,
-            contact_id: contact[0].id
-        }
-        //api call to make the changes if the email is valid
-        if (emailValidation(eM))
+        //checks if any change has been made, if not the form won't be sent
+        if(sameStrings(name, last, eM, phone, contact))
         {
-            axios.put('/api/v1/contact_list/' + contact[0].id, {...edited_contact})
-                .then(res => {
-                    //api call to add the edit entry on the EDITS Table
-                    axios.post('/api/v1/edits', {...edit_data}).
-                    then (resp => {
-                        alert("Contact edited!")
-                    })
-                })
-                .catch(res=> {
-                        //This alert happens when the API returns status 405
-                        alert("Email binded to another contact!")
-                    }
-                )
+            alert("You didn't make any changes! Remember that Names must be 2 letters minimum and phone number at least 5 digits")
         }else{
-            alert("Email not valid")
+            //object that carries the updated data of the contact
+            const edited_contact = {
+                first_name: name,
+                last_name: last,
+                email: eM,
+                phone_number: phone,
+                id: contact[0].id
+            }
+            //object that carries the data of the edit
+            const edit_data = {
+                date: moment().format("MMM Do YY"),
+                previous_first_name: contact[0].attributes.first_name,
+                previous_last_name: contact[0].attributes.last_name,
+                previous_email: contact[0].attributes.email,
+                previous_phone_number: contact[0].attributes.phone_number,
+                contact_id: contact[0].id
+            }
+            //api call to make the changes if the email is valid
+            if (emailValidation(eM))
+            {
+                axios.put('/api/v1/contact_list/' + contact[0].id, {...edited_contact})
+                    .then(res => {
+                        //api call to add the edit entry on the EDITS Table
+                        axios.post('/api/v1/edits', {...edit_data}).
+                        then (resp => {
+                            alert("Contact edited!")
+                        })
+                    })
+                    .catch(res=> {
+                            //This alert happens when the API returns status 405
+                            alert("Email binded to another contact!")
+                        }
+                    )
+            }else{
+                alert("Email not valid!")
+            }
         }
-
     }
 
     const form = contact.map(item => {
         return(
             <Form id="form-edit-contact">
-                <h4>Input the new information of the contact </h4><br/><br/>
+                <h4>Input the new information of the contact </h4><br/>
+                <strong>If you left some field without input the value will remain the same</strong><br/>
                 Current First Name: <b>{item.attributes.first_name}</b><br/>
                 {setFirstName}<br/>
                 Current Last Name: <b>{item.attributes.last_name}</b><br/>

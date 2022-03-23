@@ -14,7 +14,7 @@ contact_seed = Contact.create([{
                           }])
 
 Edit.create([{
-                 date: "none",
+                 date: "Mar 23rd 22",
                  previous_first_name: "test",
                  previous_last_name: "test",
                  previous_phone_number: 000000000,
